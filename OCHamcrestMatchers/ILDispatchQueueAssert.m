@@ -25,7 +25,11 @@
 //  WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
+#ifdef TARGET_OS_IPHONE
+#import <OCHamcrestIOS/HCAssertThat.h>
+#else
 #import <OCHamcrest/HCAssertThat.h>
+#endif
 
 #import "ILDispatchQueueAssert.h"
 

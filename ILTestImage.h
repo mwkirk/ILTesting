@@ -25,7 +25,9 @@
 //  WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
+#ifndef TARGET_OS_IPHONE
 #import <Foundation/Foundation.h>
+
 
 typedef void (^ValidateDrawInRect)(NSRect drawRect, NSRect fromRect, NSCompositingOperation operation, CGFloat fraction);
 
@@ -46,3 +48,5 @@ typedef void (^ValidateDrawInRect)(NSRect drawRect, NSRect fromRect, NSCompositi
 - (void)drawInRect:(NSRect)rect fromRect:(NSRect)fromRect operation:(NSCompositingOperation)op fraction:(CGFloat)delta;
 
 @end
+
+#endif
